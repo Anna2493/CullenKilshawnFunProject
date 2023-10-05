@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    margin-left: 20px;
+    width: 20rem;
+    height: auto;
+}
+
+.navbar__list{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar__list-container{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    
+    list-style: none;
+    align-items: center;
+}
+
+.navbar__list-item{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.navbar__list-item a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #293646;
+}
+
+.button{
+    font-size: 1rem;
+    padding: 0.6em 1em 0.6em 1em;
+    background-color: #9B1A1D;
+    color: #fff;
+    border: none;
+}
+
+.navbar__list-button{
+    margin-right: 20px;
+}
+
+.section__home{
+    background-image: url(./components/images/Background\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__home-body{
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    
+}
+
+.section__home-body--text{
+    font-size: 2rem;
+    color: #293646;
+}
+
+.section__home-body--text2{
+    font-size: 2.5rem;
+    color: #293646;
+}
+
+.about{
+    background-color: blanchedalmond;
+}
+
+.featured{
+    background-color: cadetblue;
+}
