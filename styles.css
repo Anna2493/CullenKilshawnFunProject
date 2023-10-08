@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-size: 1rem; */
 }
 
 section{
@@ -9,40 +10,76 @@ section{
     height: 100vh;
 }
 
-.logo{
-    margin-left: 20px;
-    width: 20rem;
+.section__home{
+    background-image: url(./components/images/Background\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+    /* object-fit: contain; */
+}
+
+.navbar__container{
+    position: absolute;
+    /* background-color: #9B1A1D; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar__logo-container{
+    width: 500px;
     height: auto;
 }
 
-.navbar__list{
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    list-style: none;
-    align-items: center;
+.logo{
+    margin-left: 20px;
+    max-width: 400px;
+    height: auto;
 }
+
+@media screen and (max-width: 1500px){
+    .logo{
+        width: 200px;
+    }
+
+    .navbar__container{
+        /* background-color: aqua; */
+    }
+
+    .navbar__list-item{
+        font-size: 0.7rem !important;
+        color: #fff;
+    }
+}
+
+/* .navbar__list{
+    text-decoration: none;
+    list-style: none;  
+} */
 
 .navbar__list-container{
     margin-left: auto;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
     list-style: none;
     align-items: center;
 }
 
 .navbar__list-item{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-}
-
-.navbar__list-item a{
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 1rem;
     text-decoration: none;
     color: #293646;
 }
+
+/* .navbar__list-item a{
+    text-decoration: none;
+    color: #293646;
+} */
 
 .button{
     font-size: 1rem;
@@ -56,14 +93,10 @@ section{
     margin-right: 20px;
 }
 
-.section__home{
-    background-image: url(./components/images/Background\ image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .section__home-body{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 20px);
     
 }
@@ -76,6 +109,12 @@ section{
 .section__home-body--text2{
     font-size: 2.5rem;
     color: #293646;
+}
+
+.property-selector__container{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
 }
 
 .about{
