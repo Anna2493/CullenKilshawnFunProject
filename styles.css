@@ -117,7 +117,7 @@ section{
     background-color: #fff;
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1600px){
     .logo{
         width: 200px;
     }
