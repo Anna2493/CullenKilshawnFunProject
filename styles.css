@@ -78,8 +78,8 @@ section{
     flex-direction: row;
     margin-top: 18vh;
     justify-content: space-between;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
     width: 100%;
     height: auto;
 }
@@ -108,8 +108,8 @@ section{
 }
 
 .property-selector__container{
-    width: 600px;
-    height: 700px;
+    width: 32em;
+    height: 30em;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -119,15 +119,15 @@ section{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
 }
 
 .selection-button__container{
     width: 100%;
     display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    padding: 20px 50px 0 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em 1em 0 1em;
 }
 
 .selection-button{
@@ -139,13 +139,71 @@ section{
     width: 150px;
 }
 
+.form__container{
+    padding: 1em 2em 0 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.location__container{
+    background-color: #FFCC00;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-label{
+    font-size: 1.3rem;
+    width: 50%;
+}
+
+.form-input__container{
+    display: flex;
+    width: 50%;
+}
+
+.location-input{
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.price__container{
+    background-color: #9B1A1D;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bedrooms__container{
+    background-color: #FFCC00;
+    font-size: 1.3rem;
+}
+
+.property-type__container{
+    background-color: #9B1A1D;
+    font-size: 1.3rem;
+}
+
+.search-radius__container{
+    background-color: #FFCC00;
+    font-size: 1.3rem;
+}
+
+.search-button__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0 0 0;
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 1750px){
     .logo{
         width: 200px;
     }
 
     .navbar__container{
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     .navbar__list-item{
@@ -167,9 +225,9 @@ section{
     }
 
     .property-selector__container{
-        width: 600px;
-        height: 300px;
-        background-color: #fff;
+        /* width: 450px;
+        height: 300px; */
+        /* background-color: #fff; */
     }
 }
 
